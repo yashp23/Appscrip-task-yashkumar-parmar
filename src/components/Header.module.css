@@ -1,0 +1,163 @@
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: rgb(219, 112, 112);
+  padding: 10px;
+  font-size: 14px;
+}
+
+.mainNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 60%;
+  margin: auto 0;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  padding: 10px 20px;
+  height: 70%; 
+  font-size: x-large;
+}
+
+.logo {
+  max-width: 100px; 
+  height: auto;
+  position: relative;
+}
+
+.logoText {
+  text-align: center;
+  margin: 0;
+  flex: 1; 
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.navLinks {
+  display: flex;
+  gap: 70px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.Link {
+  color: black;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.languageSwitch {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.profilePic {
+  margin-left: 20px;
+}
+
+.profileImage {
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .topBar {
+    font-size: 12px;
+    padding: 10px 5%;
+  }
+
+  .logoContainer {
+    padding: 10px;
+    margin: 0;
+    justify-content: center; 
+    font-size: small; 
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logoText {
+    font-size: medium; 
+    margin: 0;
+    flex: none; 
+    text-align: center; 
+  }
+
+  .navBar {
+    display: none; 
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .icons {
+    gap: 10px;
+    margin-left: auto;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    height: auto;
+  }
+
+  .topBar {
+    font-size: 13px;
+  }
+
+  .logoContainer {
+    height: auto;
+  }
+
+  .navBar {
+    padding: 15px 0;
+  }
+
+  .navLinks {
+    font-size: large;
+  }
+
+  .icons {
+    gap: 15px;
+  }
+}
