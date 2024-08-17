@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Products.module.css";
+import Link from "next/link";
 
 const Products = () => {
   return (
@@ -18,9 +19,9 @@ const Products = () => {
       <div className={styles.itemsSection}>
         <div className={styles.itemsInfo}>
           <span>3425 ITEMS</span>
-          <a href="#" className={styles.filterLink}>
+          <Link href="#" className={styles.filterLink}>
             HIDE FILTER
-          </a>
+          </Link>
         </div>
 
         <div className={styles.sortingOption}>

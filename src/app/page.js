@@ -1,5 +1,6 @@
 import Products from "@/components/Product";
 import Shop from "@/components/Shop";
+import Link from "next/link";
 
 export default function Home() {
   const products = [
@@ -18,8 +19,8 @@ export default function Home() {
       <div className="product-page"><Products /></div>
 
       <div className="filter-options">
-        <a href="#" className="filter-link">Most Recent</a>
-        <a href="#" className="filter-link">Best Selling</a>
+        <Link href="#" className="filter-link">Most Recent</Link>
+        <Link href="#" className="filter-link">Best Selling</Link>
       </div>
       <h4 className="new-products">NEW PRODUCTS</h4>
 
